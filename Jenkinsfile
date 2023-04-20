@@ -4,8 +4,8 @@ pipeline {
     stage('Prep') {
       steps {
         withCredentials(bindings: [
-                              usernamePassword(credentialsId:'WHIDevOps-jfrog-cred',
-                                               passwordVariable: 'WHI_REPO_PASSWORD', usernameVariable:'WHI_REPO_USER')]) {
+                                        usernamePassword(credentialsId:'WHIDevOps-jfrog-cred',
+                                                         passwordVariable: 'WHI_REPO_PASSWORD', usernameVariable:'WHI_REPO_USER')]) {
             script {
               deleteDir()
               checkout scm
@@ -56,7 +56,7 @@ pipeline {
         }
         steps {
           withCredentials(bindings: [
-                                usernamePassword(credentialsId: 'WHIDevOps-jfrog-cred', passwordVariable: 'WHI_REPO_PASSWORD', usernameVariable: 'WHI_REPO_USER')]) {
+                                            usernamePassword(credentialsId: 'WHIDevOps-jfrog-cred', passwordVariable: 'WHI_REPO_PASSWORD', usernameVariable: 'WHI_REPO_USER')]) {
               script {
                 sh "make publish"
               }

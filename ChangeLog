@@ -1,0 +1,57 @@
+2022-01-20  Frederic Commandeur  <frederic.commandeur@ibm.com>
+
+	* NEWS.md: Add an entry for rapid-dev-dicom 1.0.3.
+
+2022-01-14  Frederic Commandeur  <frederic.commandeur@ibm.com>
+
+	* Dicom/DicomScanner.py: Add test on echo time before converting to float and rounding.
+
+2021-06-30  Giovanni Palma  <giovanni.palma@ibm.com>
+
+	* NEWS.md: Add an entry for rapid-dev-dicom 1.0.2.
+
+2021-06-30  Giovanni Palma  <giovanni.palma@ibm.com>
+
+	* Dicom/DicomScanner.py: Fix  echo time rounding when  no value is
+	present.
+
+2021-06-01  Giovanni Palma  <giovanni.palma@ibm.com>
+
+	* Jenkinsfile: Fix publish stage.
+
+2021-06-01  Giovanni Palma  <giovanni.palma@ibm.com>
+
+	* Makefile: Add version rule.
+
+	* release.sh: Add file.
+
+	* NEWS.md: Add an entry for rapid-dev-dicom 1.0.1.
+
+2021-05-31  Frederic Commandeur  <frederic.commandeur@ibm.com>
+
+	* Dicom/DicomConstants.py: adding EchoTimeTag.
+	* Dicom/DicomScanner.py: adding EchoTime to the splitting process.
+
+2021-05-18  Giovanni Palma  <giovanni.palma@ibm.com>
+
+	* Jenkinsfile: Indent file.
+
+	* Makefile: Bump version.
+
+2021-05-18  Giovanni Palma  <giovanni.palma@ibm.com>
+
+
+	* Dicom/__init__.py: Import version.
+
+2021-05-18  Giovanni Palma  <giovanni.palma@ibm.com>
+
+	* Makefile: Fix publish rule.
+
+2021-05-18  Giovanni Palma  <giovanni.palma@ibm.com>
+
+	* README.md: Update content.
+
+	* Jenkinsfile: Add file (repo init).
+	* Dicom: Likewise.
+	* setup.py: Likewise.
+	* Makefile: Likewise.

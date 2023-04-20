@@ -67,7 +67,7 @@ pipeline {
         }
 
         stage('Publish'){
-            when { expression { return env.BRANCH_NAME ==~ /^development_.*/ || env.BRANCH_NAME ==~ /^release_.*/ || env.BRANCH_NAME == "master" } }
+            when { expression { return env.BRANCH_NAME ==~ /^development_.*/ || env.BRANCH_NAME ==~ /^release_.*/ || env.BRANCH_NAME == "main" } }
             steps {
                 withCredentials([
                     usernamePassword(credentialsId: 'WHIDevOps-jfrog-cred', passwordVariable: 'WHI_REPO_PASSWORD', usernameVariable: 'WHI_REPO_USER')]) {
